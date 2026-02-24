@@ -34,6 +34,7 @@ acc, cm = evaluate_model(model, X_test, y_test)
 
 col1, col2 = st.columns([2, 1])
 
+
 with col1:
     plot_decision_boundary(
         model,

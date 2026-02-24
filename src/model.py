@@ -8,10 +8,13 @@ def train_knn(X_train, y_train, k, weights, metric):
         weights=weights,
         metric=metric
     )
+    
     model.fit(X_train, y_train)
     return model
 
+
 def evaluate_model(model, X_test, y_test):
+    
     preds = model.predict(X_test)
     acc = accuracy_score(y_test, preds)
     cm = confusion_matrix(y_test, preds)

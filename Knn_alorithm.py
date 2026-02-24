@@ -54,6 +54,7 @@ def plot_decision_boundary(model, X, y):
     cmap_light = ListedColormap(["#FFAAAA", "#AAAAFF", "#AAFFAA"])
     cmap_bold = ["r", "b", "g"]
     
+    
     plt.figure(figsize=(8, 6))
     plt.contourf(xx, yy, Z, alpha=0.3, cmap=cmap_light)
     plt.scatter(X[:, 0], X[:, 1], c=y, edgecolors="k", cmap=ListedColormap(cmap_bold))
