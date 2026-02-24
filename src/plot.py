@@ -13,6 +13,7 @@ def plot_decision_boundary(model, X, y, k, weights):
         np.arange(y_min, y_max, h)
     )
 
+
     Z = model.predict(np.c_[xx.ravel(), yy.ravel()])
     Z = Z.reshape(xx.shape)
 
